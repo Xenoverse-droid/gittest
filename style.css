@@ -8,6 +8,46 @@ html {
     font-size: 62.5%;
 }
 
+
+form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
+    max-width: 40rem;
+    width: 95%;
+    color: #000;
+}
+
+
+p {
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 700;
+    /* padding: 4px; */
+    cursor: pointer;
+    width: fit-content;
+}
+
+label {
+    font-size: 2rem;
+}
+
+input {
+    background-color: #ec88ec;
+    color: #fff;
+}
+
+button {
+    background-image: linear-gradient(45deg, rgb(172, 64, 64), #ec88ec);
+    color: #fff;
+    font-weight: 600;
+}
+
 .container {
     min-height: 100vh;
     display: flex;
@@ -17,21 +57,22 @@ html {
     color: #fff;
 }
 
-p {
-    position: relative;
-    font-family:Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    padding: 4px;
-    cursor: pointer;
+
+.form-header {
+    align-self: center;
+    font-size: 3rem;
+    color: purple;
 }
 
-p::before {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 1rem;
-    height: 1rem;
-    top: 0;
-    left: 0;
-    display: inline-block;
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.input-container input, button {
+    /* height: 5rem; */
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
 }
