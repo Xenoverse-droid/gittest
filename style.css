@@ -2,77 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
     font-size: 62.5%;
 }
 
-
-form {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+body {
     display: flex;
-    flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    gap: 2rem;
-    /* align-items: center; */
-    max-width: 40rem;
-    width: 95%;
-    color: #000;
+    align-items: center;
+    background-color: #ffffff;
 }
-
 
 p {
-    position: relative;
-    font-family:Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    /* padding: 4px; */
-    cursor: pointer;
-    width: fit-content;
-}
-
-label {
-    font-size: 2rem;
-}
-
-input {
-    background-color: #ec88ec;
-    color: #fff;
-}
-
-button {
-    background-image: linear-gradient(45deg, rgb(172, 64, 64), #ec88ec);
-    color: #fff;
+    font-size: 3rem;
     font-weight: 600;
 }
 
+label {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 4rem;
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.07);
+}
+
+button:active {
+    transform: scale(1);
+}
+
 .container {
-    min-height: 100vh;
+    border-radius: 2rem;
+    background-color: #ffffff5a;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #8c8a8a;
+    padding: 5rem;
+    max-width: 45rem;
+    width: 95%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, red, purple);
-    color: #fff;
+    gap: 4rem;
 }
 
-
-.form-header {
-    align-self: center;
-    font-size: 3rem;
-    color: purple;
-}
-
-.input-container {
+.form {
     display: flex;
-    gap: 0.5rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.input-container input, button {
-    /* height: 5rem; */
-    padding: 1rem;
-    font-size: 2rem;
-    border: none;
+.check-container {
+    align-self: flex-start;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
 }
+/* --- The input boxex  --- */
+.text-input {
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    border: 1px solid #000;
+}
+
